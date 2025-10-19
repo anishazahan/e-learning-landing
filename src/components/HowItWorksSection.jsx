@@ -65,7 +65,7 @@ const HowItWorksSection = () => {
           <div className="flex justify-center">
             <HeadingCard title={"✨ Our Process"} />
           </div>
-          <h2 className="text-4xl font-extrabold text-black mt-10">
+          <h2 className="text-xl sm:text-2xl lg:text-4xl font-medium text-black mt-10">
             How Does It Work?
           </h2>
           <p className="mt-6 text-lg text-gray-500 max-w-2xl mx-auto">

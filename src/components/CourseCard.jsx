@@ -4,20 +4,20 @@ import { Star, Users, Briefcase } from "lucide-react";
 import manImg from "@/assets/images/man.png";
 
 const CourseCard = ({ course }) => (
-  <div className="flex-shrink-0 w-80 md:w-full rounded-2xl bg-white shadow overflow-hidden border border-gray-100 group ">
+  <div className="flex-shrink-0 p-2 md:w-full rounded-2xl bg-white border-gray-300 overflow-hidden border  group ">
     {/* Image Container */}
-    <div className="relative w-full h-56 overflow-hidden">
+    <div className="relative w-full h-56 overflow-hidden group-hover:rounded-t-2xl">
       <Image
         src={course.image}
         alt={course.title}
         layout="fill"
         objectFit="cover"
-        className="rounded-t-2xl group-hover:scale-105 transition-all duration-500 cursor-pointer"
+        className="rounded-t-2xl group-hover:rounded-t-2xl group-hover:scale-105 transition-all duration-500 cursor-pointer"
       />
     </div>
 
     {/* Content */}
-    <div className="p-4 space-y-3">
+    <div className="py-4 px-2 space-y-3">
       {/* Meta Data (Students, Curriculum, Tag) */}
       <div className="flex items-center justify-between space-x-3 text-xs text-gray-500">
         <div className="flex -space-x-4 relative">

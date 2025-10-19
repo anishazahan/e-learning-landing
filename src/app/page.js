@@ -17,8 +17,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-      <Navigation />
+    <div className="relative overflow-x-hidden">
+      <div className="fixed w-full z-[9000] top-0 left-0 right-0">
+        <Navigation />
+      </div>
       <HeroSection />
       <WhyChooseUs />
       <CategoryCourses />
@@ -32,6 +34,6 @@ export default function Home() {
       <NewsBlogSection />
       <Newsletter />
       <Footer />
-    </>
+    </div>
   );
 }

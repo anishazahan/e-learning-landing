@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={index}
-                className="bg-gray-100 rounded-2xl shadow hover:shadow-xl transition-all duration-300 p-8 group hover:transform hover:-translate-y-2"
+                className="bg-gray-100 rounded-2xl shadow hover:shadow transition-all duration-300 p-8 group hover:transform hover:-translate-y-2"
               >
                 {/* Icon Container */}
                 <div className="mb-6">
@@ -54,12 +54,6 @@ const WhyChooseUs = () => {
                 <p className="text-gray-600 leading-relaxed">
                   {feature.description}
                 </p>
-
-                {/* Check Mark */}
-                <div className="mt-6 flex items-center text-violet-600">
-                  <CheckCircle className="w-5 h-5 mr-2" />
-                  <span className="text-sm font-medium">Learn More</span>
-                </div>
               </div>
             );
           })}

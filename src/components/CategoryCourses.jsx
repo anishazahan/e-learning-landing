@@ -116,7 +116,7 @@ const CategoryCourses = () => {
       <div className="">
         {/* Header */}
         <div className="mb-12 flex flex-col lg:flex-row justify-between items-start lg:items-end">
-          <h2 className="text-xl sm:text-2xl md:text-4xl font-medium text-dark">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-medium text-dark md:max-w-[346px]">
             Popular Category Courses
           </h2>
           <p className="mt-3 lg:mt-0 text-base text-gray-500 max-w-lg lg:text-right">

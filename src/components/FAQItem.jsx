@@ -19,13 +19,13 @@ const FAQItem = ({ item, isOpen, onClick }) => {
         onClick={() => onClick(item.id)}
         aria-expanded={isOpen}
       >
-        <span
-          className={`text-lg sm:text-xl lg:text-2xl font-medium transition-colors duration-300 ${
+        <h3
+          className={`text-lg sm:text-xl md:text-2xl  font-medium transition-colors duration-300 ${
             isOpen ? "text-dark" : "text-gray-700"
           }`}
         >
           {item.question}
-        </span>
+        </h3>
 
         {/* Icon Toggle */}
         <div

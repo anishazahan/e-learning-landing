@@ -75,7 +75,7 @@ const NewsBlogSection = () => {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-2xl font-semibold leading-tight group-hover:text-blue-200 transition-colors duration-200">
+                <h3 className="text-2xl font-medium leading-tight group-hover:text-blue-200 transition-colors duration-200">
                   {post.title}
                 </h3>
 
