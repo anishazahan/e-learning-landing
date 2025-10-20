@@ -29,27 +29,31 @@ const CategoryCourses = () => {
 
   // Renders the list of categories for the DESKTOP view
   const renderDesktopMenu = () => (
-    <div className="hidden lg:block lg:col-span-1 pr-8">
-      <ul className="space-y-3">
+    <div className="hidden lg:block lg:col-span-1 pr-8 relative">
+      {/* This element creates the faint vertical line running through all categories */}
+      <div className="absolute top-0 left-0 w-[1px] h-full bg-gray-200"></div>
+      <p className="absolute left-0 top-0  transform -translate-y-1/2 w-2 h-2 rounded-full bg-black -ml-[4px]"></p>
+
+      <ul className="space-y-3 ">
         {categoriesData.map((category) => (
-          <li key={category.slug}>
+          <li key={category.slug} className="relative">
             <button
               onClick={() => handleDesktopSelect(category.slug)}
-              className={`w-full text-left flex items-center py-2 px-3 rounded-lg transition-colors duration-200 
-                ${
-                  activeCategorySlug === category.slug
-                    ? "text-dark font-semibold text-xl pointer-events-none"
-                    : "text-gray-500 hover:text-gray-700 cursor-pointer"
-                }`}
+              className={`w-full text-left flex items-center py-2 pl-6 pr-3 transition-colors duration-200 relative z-10 
+              ${
+                activeCategorySlug === category.slug
+                  ? "text-gray-900 font-semibold text-2xl pointer-events-none"
+                  : "text-gray-500 hover:text-gray-700 cursor-pointer text-lg"
+              }`}
             >
-              {/* Active Dot Style */}
-              <span
-                className={`w-2 h-2 rounded-full mr-3 transition-all duration-300 ${
-                  activeCategorySlug === category.slug
-                    ? "bg-violet-900"
-                    : "bg-transparent"
-                }`}
-              ></span>
+              {/* Conditional element for the active border/dot */}
+              {activeCategorySlug === category.slug ? (
+                <>
+                  {/* Active Vertical Line Segment  */}
+                  <span className="absolute left-[0.5px] top-0 w-[2px] h-full bg-black -ml-[1px] rounded-full"></span>
+                </>
+              ) : null}
+
               {category.name}
             </button>
           </li>
