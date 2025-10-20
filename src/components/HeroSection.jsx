@@ -50,7 +50,7 @@ export default function HeroSection() {
 
           <div className="w-full mt-5 lg:mt-7 flex justify-center mx-auto">
             {/* Background Elements */}
-            <div className="grid grid-cols-1 gap-4 lg:gap-0  lg:grid-cols-3 ">
+            <div className="grid grid-cols-1 gap-4 xl:gap-0  xl:grid-cols-3 ">
               {/* left */}
               <div className="grid grid-cols-3 gap-4 lg:gap-0">
                 <div className=" ">
@@ -80,7 +80,7 @@ export default function HeroSection() {
               </div>
 
               {/* right */}
-              <div className=" grid-cols-2 gap-4 lg:-ml-6 hidden lg:grid">
+              <div className=" grid-cols-2 gap-4 lg:-ml-6 hidden xl:grid">
                 <div className="flex flex-col">
                   <div className="grid grid-cols-2 gap-6">
                     <div className="relative w-[110px] h-[128px]">
@@ -118,41 +118,6 @@ export default function HeroSection() {
                     className="object-cover rounded-3xl"
                   />
                 </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4 lg:hidden">
-                {" "}
-                <div className="flex flex-col ">
-                  {" "}
-                  <div className="grid grid-cols-2 gap-4">
-                    {" "}
-                    <div className=" ">
-                      {" "}
-                      <Image src={rightTop1} alt="right top 1" priority />{" "}
-                    </div>{" "}
-                    <div className=" ">
-                      {" "}
-                      <Image src={rightTop2} alt="right top 2" priority />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="w-[272px] h-[128px] mt-2">
-                    {" "}
-                    <Image
-                      width={272}
-                      height={128}
-                      src={rightBottom}
-                      alt="right bottom"
-                    />{" "}
-                  </div>{" "}
-                </div>{" "}
-                <div className="w-[272px] h-[272px] ">
-                  {" "}
-                  <Image
-                    className="h-auto object-contain"
-                    src={rightEnd}
-                    alt="right end"
-                    priority
-                  />{" "}
-                </div>{" "}
               </div>
             </div>
           </div>
